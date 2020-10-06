@@ -40,7 +40,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     */
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder customViewHolder, int i) {
+        /* Retrieve item from the dataList */
+        String itemText = data[i];
 
+        /* Set data to the view */
+        customViewHolder.textView.setText(itemText);
     }
 
     /*
